@@ -1,23 +1,43 @@
+/* Tinder Cards CSS */
+
 .tinderCards {
 }
 
 .tinderCards__container {
   display: flex;
   justify-content: center;
-  margin-top: 8vh;
+  margin-top: 5vh;
 }
 
 .card {
   position: relative;
   background-color: white;
-  width: 400px;
+  width: 370px;
   padding: 1rem;
+
   max-width: 85vw;
-  height: 55vh;
-  border-radius: 20px;
+  height: 40vh;
+  border-radius: 20px 20px 0 0;
   box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-position: center;
+}
+
+.card-bio {
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  width: 402px;
+  max-width: 85vw;
+  box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card-bio h3 {
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+}
+.card-bio p {
+  margin: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .swipe {
@@ -34,4 +54,43 @@
   bottom: 0;
   color: #fff;
   margin: 10px;
+}
+
+/* Swipe Buttons CSS */
+.swipeButtons {
+  position: fixed;
+  bottom: 8vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.swipeButtons .MuiIconButton-root {
+  background-color: white;
+  box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swipeButtons__repeat {
+  color: #f5b748 !important;
+  padding: 1.5vw !important;
+}
+
+.swipeButtons__left {
+  color: #ec5e6f !important;
+  padding: 1.5vw !important;
+}
+
+.swipeButtons__star {
+  color: #12a8ec !important;
+  padding: 1.5vw !important;
+}
+
+.swipeButtons__right {
+  color: #76e2b3 !important;
+  padding: 1.5vw !important;
+}
+
+.swipeButtons__lightning {
+  color: #915dd1 !important;
+  padding: 1.5vw !important;
 }
